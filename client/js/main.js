@@ -98,6 +98,7 @@ getChallengeBtn.addEventListener("click",e=>{
         challengeLink.href = data.link;
         getChallengeDiv.style.display = "block";
         getChallengeBtn.style.display = "none";
+        getChallengeDiv.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
         closeItem.addEventListener("click",e=>{
           e.preventDefault();
           getChallengeDiv.style.display = "none";
